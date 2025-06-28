@@ -1,0 +1,21 @@
+VERSION ""
+
+BO_ 100 VEHICLE_CONTROL: 8 Vector__XXX
+ SG_ SteeringAngle : 0|16@1+ (0.1,0) [-500|500] "deg" Vector__XXX
+ SG_ Throttle : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Brake : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ Gear : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EnableAutonomous : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 200 VEHICLE_STATUS: 8 Vector__XXX
+ SG_ Speed : 0|16@1+ (0.01,0) [0|100] "m/s" Vector__XXX
+ SG_ YawRate : 16|16@1- (0.01,0) [-10|10] "deg/s" Vector__XXX
+ SG_ LateralAccel : 32|16@1- (0.01,0) [-10|10] "m/s2" Vector__XXX
+ SG_ LongitudinalAccel : 48|16@1- (0.01,0) [-10|10] "m/s2" Vector__XXX
+
+BO_ 300 OBSTACLE_DETECTION: 8 Vector__XXX
+ SG_ ObstacleDist : 0|16@1+ (0.1,0) [0|200] "m" Vector__XXX
+ SG_ ObstacleAngle : 16|16@1- (0.1,0) [-180|180] "deg" Vector__XXX
+ SG_ ObstacleType : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ObstacleValid : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+

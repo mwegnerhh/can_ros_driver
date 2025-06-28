@@ -1,0 +1,7 @@
+<launch>
+  <!-- Load parameters from YAML file -->
+  <rosparam command="load" file="$(find can_ros_driver)/config/params.yaml" />
+
+  <!-- Include the CAN device node -->
+  <node name="can_ros_driver" pkg="can_ros_driver" type="can_ros_driver_node.py" output="screen" />
+</launch>

@@ -1,0 +1,11 @@
+### CAN Driver Parameters
+
+can_ros_driver:
+
+  # Provide absolute path to the DBC file 
+  dbc_file_path: "/home/hawks/driverless-software/src/devices/can_ros_driver/dbc/can_db.dbc"
+
+  # Provide the CAN bus interface names (e.g., can0, can1)
+  can_bus_names:
+    - can1
+    - can2
