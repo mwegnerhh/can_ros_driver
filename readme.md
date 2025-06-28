@@ -2,15 +2,13 @@
 
 ## Overview
 
-`can_ros_driver` is a flexible ROS driver for interfacing with one or more complete CAN bus networks. Using a DBC file, it automatically encodes and decodes all CAN messages on the bus, and dynamically generates the corresponding ROS message types and CMakeLists.txt entries. For each CAN message, the driver automatically sets up ROS publishers and subscribers that follow the naming and structure defined in the DBC file, enabling seamless and automated communication between your CAN network and ROS ecosystem. 
-
-
+`can_ros_driver` is a ROS node for interfacing with one or more CAN bus networks. Given a DBC file, it automatically encodes and decodes all messages and signals. ROS publishers and subscribers are generated based on the DBC structure, enabling seamless CAN-to-ROS communication.
 ---
 
 ## Features
 
-- **Automatic ROS message generation** from DBC files
 - **Encoding/decoding** of all CAN messages in DBC file
+- **Automatic ROS message generation** from DBC files
 - **Support for multiple CAN interfaces** (e.g., `can0`, `can1`)
 - **Configuration** via YAML
 - **ROS publishers and subscribers** for each CAN message
